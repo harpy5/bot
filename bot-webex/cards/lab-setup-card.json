@@ -1,0 +1,95 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Enter Lab Details",
+            "wrap": true,
+            "size": "extraLarge",
+            "weight": "Bolder"
+        },
+        {
+            "type": "TextBlock",
+            "text": "How many devices do you have ?",
+            "wrap": true,
+            "weight": "Bolder"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "2",
+            "id": "Num_of_devices"
+        },
+        {
+            "type": "TextBlock",
+            "text": "How much rackspace do you need ?",
+            "wrap": true,
+            "weight": "Bolder"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "4",
+            "id": "Num_RU"
+        },
+        {
+            "type": "TextBlock",
+            "text": "How many IPs do you need ?",
+            "wrap": true,
+            "weight": "Bolder",
+            "color": "Dark"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "30",
+            "id": "Num_of_IPs"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Is this a temporary or permanent lab ?",
+            "wrap": true,
+            "weight": "Bolder"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "permanent",
+            "id": "Status"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Do you need lab's compute for VMs ?",
+            "wrap": true,
+            "weight": "Bolder"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "Yes/No",
+            "id": "VMs"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Please provide small description of your lab",
+            "wrap": true,
+            "weight": "Bolder"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "It is a lab setup for streaming telemetry.",
+            "id": "description"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit",
+                    "style": "positive",
+                    "data": {
+                        "callback_keyword": "addnewlab"
+                    }
+                }
+            ],
+            "isVisible": true
+        }
+    ]
+}

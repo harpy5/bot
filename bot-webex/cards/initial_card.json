@@ -1,0 +1,70 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Please Enter the SE lab service you want to access",
+            "wrap": true,
+            "size": "large",
+            "weight": "Bolder"
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "id": "choice",
+            "label": "Enter choice",
+            "wrap": true,
+            "choices": [
+                {
+                  "title": "Set Up a new lab",
+                  "value": "1"
+                },
+                {
+                  "title": "New device Installation",
+                  "value": "2"
+                },
+                {
+                    "title": "Device Replacement",
+                    "value": "2"
+                },
+                {
+                    "title": "Device Image upgrade",
+                    "value": "3"
+                },
+                {
+                    "title": "Loaner Device Request",
+                    "value": "4"
+                },
+                {
+                    "title": "e-Waste Service",
+                    "value": "5"
+                },
+                {
+                    "title": "Request an IP address block",
+                    "value": "6"
+                },
+                {
+                    "title": "Request Lab Compute",
+                    "value": "7"
+                }
+
+            ]
+        },
+        
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.Submit",
+                    "title": "Submit",
+                    "style": "positive",
+                    "data": {
+                        "callback_keyword": "services"
+                    }
+                }
+            ],
+            "isVisible": true
+        }
+    ]
+}
