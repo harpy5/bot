@@ -1,7 +1,7 @@
 
 from webex_bot.models.command import Command
 import logging
-import requests
+
 import json
 from webex_bot.models.response import Response
 from adaptivecardbuilder import * 
