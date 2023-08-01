@@ -8,7 +8,7 @@ from hyperflex import GetHyperflexAlarms
 from deployLab import DeployLab
 from runcommand import GetCommand
 
-api_token = "NzkzMWFkMDMtZGFlNS00NGQ3LThlYjAtZDVlZGI0Y2FkYmM1NDk1OTNmZDYtODhh_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
+api_token = ""
 
 bot = WebexBot(api_token, approved_domains=["cisco.com"], approved_users=["hsingh5@cisco.com"])
 
